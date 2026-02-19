@@ -1,0 +1,94 @@
+/* ================= CONFIGURACIÓN GENERAL ================= */
+body {
+    margin: 0; /* Quita el margen por defecto del navegador */
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8; /* Fondo gris claro */
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+/* Contenedor que usa Flexbox para alinear foto y texto */
+.datos-personales {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 30px; /* Espacio entre la foto y el texto */
+    max-width: 1000px; /* Ancho máximo del contenedor */ 
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Imagen circular */
+.foto-perfil { 
+    width: 150px;  /* Ancho fijo para la foto */
+    height: 150px; /* Alto fijo para la foto */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Evita que la imagen se estire o distorsione */
+}
+
+/* ================= CONTENIDO PRINCIPAL ================= */
+/* Contenedor general con Grid para las tarjetas */
+.contenido { 
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* ===================== TARJETAS ================= */
+.tarjeta {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* ===================== ESTILOS DE TEXTO ================= */
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 8px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+/* ===================== FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Botón estilo tech */
+.btn-portafolio {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.btn-portafolio:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* ================= PORTAFOLIO ================= */
+
+.img-proyecto {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}

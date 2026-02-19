@@ -1,47 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae - César Cáceres</title>
-</head>
-<body>
-    <img src="/img/foto_perfil.JPG" alt="Foto de perfil" width="130" height="210">
-    <h1>César Cáceres</h1>
-    <h2>Soldador</h2>
-    <p>Soy un soldador con cuatro años de experiencia en el manejo de acero inoxidable y fierro. Poseo habilidades de trabajo bajo presión, soy perfeccionista y paciente, además de proactivo y motivado para desarrollar nuevas habilidades y adquirir conocimientos sobre materiales y técnicas. Estoy comprometido a aportar mi experiencia y conocimiento para lograr los mejores resultados.</p>
-    <hr>
-    <h1>Experiencia Laboral</h1>
-    <h4>Jvelas, Oct 2020</h4>
-    <ul>
-        <li>Experiencia profesional como soldador de acero inoxidable y fierro, desarrollando habilidades en lectura de planos, dimensionamiento y organización de materiales.</li>
-        <li>Dominio de técnicas de soldadura MIG y TIG para la fabricación de pasamanos, cerchas, sillones, etc y seguridad en el trabajo.</li>
-        <li>Colaboración con el equipo para garantizar la calidad del trabajo.</li>
-    </ul>
+<html lang="es">
 
-    <hr>
-    <h1>Contacto</h1>
-    <ul>
-        <li>Correo electrónico:rodriguez.cesar725@gmail.com</li>
-        <li>Teléfono: +56940271908</li>
-        <li>Dirección: Catorce Norte 3881, Pedro Aguirre Cerda</li>
-    </ul>
-    <hr>
-    <h1>Habilidades</h1>
-    <ul>
-        <li>Responsabilidad y puntualidad</li>
-        <li>Rapidez y eficiencia</li>
-        <li>Trabajo en equipo</li>
-        <li>Adaptabilidad</li>
-        <li>Motivación para aprender nuevas habilidades</li>
-    </ul>
-    <hr>
-    <h1>Educación</h1>
-    <ol>
-        <li>DuocUC Ingeniería en Informática</li>
-        <li>Técnico especializado en Metalúrgica</li>
-    </ol>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currículum Vitae - César Cáceres</title>
+        <!-- Enlazar el archivo CSS para estilos -->
+        <link rel="stylesheet" href="/css/style_cv.css">
+    </head>
 
-    <a href="/html/portafolio.html" target="_blank">Ver portafolio</a>
-</body>
+    <body>
+        <!-- ================= HEADER ================= -->
+        <!-- Contiene la información principal: foto + datos personales -->
+        <header>
+            <div class="datos-personales"> <!-- Contenedor flexible (flexbox) -->
+
+                <!-- Imagen de perfil -->
+                <img class="foto-perfil" src="/img/foto_perfil.JPG" alt="Foto de perfil" width="130" height="210">
+
+                <!-- Bloque de información personal -->
+                <div class="informacion">
+                    <h1>César Daniel Cáceres Rodriguez</h1>
+                    <p>Desarrollador Full Stack en formación</p>
+
+                    <!-- Datos de contacto -->
+                    <div>
+                        <p><strong>Teléfono:</strong> +56 9 111111111</p>
+                        <p><strong>Email:</strong> Rodriguez.cesar725@gmail.com</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/xDani-R" target="_blank">xDani-R</a></p>
+                        <p><strong>LinkedIn:</strong> <a
+                                href="https://www.linkedin.com/in/c%C3%A9sar-c%C3%A1ceres-rodr%C3%ADguez/"
+                                target="_blank">César Daniel Cáceres Rodríguez</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= MAIN ================= -->
+        <!-- Contiene todas las secciones del CV -->
+        <main>
+            <div class="contenido"> <!-- Contenedor general con Grid -->
+
+                <!-- Tarjeta: Perfil profesional -->
+                <section class="tarjeta">
+                    <h2>Perfil profesional</h2>
+                    <p>
+                    <p>
+                        Estudiante de Ingeniería en Informática y participante activo en bootcamp de Desarrollo Full
+                        Stack.
+                        Actualmente fortaleciendo habilidades en HTML, CSS, JavaScript, React y Node.js.
+                        Con experiencia previa en el área metalúrgica, destacando responsabilidad, trabajo en equipo y
+                        disciplina.
+                        Motivado por desarrollar soluciones web funcionales y continuar creciendo en el área
+                        tecnológica.
+                    </p>
+                    </p>
+                </section>
+
+                <!-- Tarjeta: Experiencia laboral -->
+                <section class="tarjeta">
+                    <h2>Experiencia Laboral</h2>
+                    <h3>Soldador Especializado</h3>
+                    <p><strong>Jvelas</strong> | 2020 – 2024</p>
+                    <ul>
+                        <li>Fabricación de estructuras metálicas de acero inoxidable y fierro.</li>
+                        <li>Aplicación de técnicas de soldadura MIG y TIG.</li>
+                        <li>Lectura e interpretación de planos técnicos.</li>
+                        <li>Trabajo bajo estándares de seguridad industrial.</li>
+                        <li>Coordinación con equipo de trabajo para cumplimiento de plazos.</li>
+                    </ul>
+                </section>
+
+                <!-- Tarjeta: Habilidades técnicas -->
+                <section class="tarjeta">
+                    <h2>Habilidades Técnicas</h2>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+                        <li><strong>Backend:</strong> Node.js</li>
+                        <li><strong>Bases de datos:</strong> MySQL, MongoDB, PostgreSQL</li>
+                        <li><strong>Herramientas:</strong> Git, GitHub</li>
+
+                    </ul>
+                </section>
+
+                <!-- Tarjeta: Habilidades blandas -->
+                <section class="tarjeta">
+                    <h2>Habilidades Blandas</h2>
+                    <ul>
+                        <li>Responsabilidad y puntualidad</li>
+                        <li>Rapidez y eficiencia</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Adaptabilidad</li>
+                        <li>Motivación para aprender nuevas habilidades</li>
+                    </ul>
+                </section>
+
+                <!-- Tarjeta: Educación -->
+                <section class="tarjeta">
+                    <h2>Educación</h2>
+                    <ul>
+                        <li>Ingeniería en Informática – Duoc UC (en curso)</li>
+                        <li>Técnico especializado en Metalúrgica</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+        <!-- Botón que lleva al portafolio -->
+        <footer class="footer">
+            <a href="/html/portafolio.html" target="_self" class="btn-portafolio">
+                Ver Portafolio
+            </a>
+        </footer>
+    </body>
 </html>

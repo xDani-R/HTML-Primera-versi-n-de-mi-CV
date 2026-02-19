@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - César Cáceres</title>
-</head>
-<body>
 
-    <table border="1">
-        <tr>
-            <th>Proyecto</th>
-            <th>Descripción</th>
-            <th>Screenshot</th>
-        </tr>
-        <tr>
-            <td>Tienda Gamer Level-UP</td>
-            <td>Desarrollo de una tienda virtual para productos de gaming.</td>
-            <td><img src="/img/proyecto1.png" alt="Screenshot Tienda Gamer Level-UP" width="560" height="300"></td>
-        </tr>
-        <tr>
-            <td>Biblioteca SIBU</td>
-            <td>Desarrollo de una aplicación web para gestión de biblioteca.</td>
-            <td><img src="/img/proyecto2.png" alt="Screenshot Biblioteca SIBU" width="560" height="300"></td>
-        </tr>
-    </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio - César Cáceres</title>
 
-    <a href="/html/index.html" target="_blank">Volver al currículum</a>
-    
-</body>
+        <!-- Enlazar el archivo CSS para estilos -->
+        <link rel="stylesheet" href="/css/style_cv.css">
+    </head>
+
+    <body>
+
+        <!-- Encabezado del portafolio -->
+        <header class="header-portafolio">
+            <h1>Portafolio de Proyectos</h1>
+            <p>
+                A continuación se presentan algunos de los proyectos desarrollados
+                durante mi formación en Desarrollo Full Stack:
+            </p>
+        </header>
+
+        <!-- Grid solo para proyectos -->
+        <main class="contenido">
+
+            <section class="tarjeta">
+                <h2>Tienda Gamer Level-UP</h2>
+                <p>Desarrollo de una tienda virtual para productos de gaming.</p>
+                <img src="/img/proyecto1.png" alt="Proyecto Tienda Gamer" class="img-proyecto">
+            </section>
+
+            <section class="tarjeta">
+                <h2>Biblioteca SIBU</h2>
+                <p>Aplicación web para gestión de biblioteca.</p>
+                <img src="/img/proyecto2.png" alt="Proyecto Biblioteca SIBU" class="img-proyecto">
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <a href="/html/index.html" class="btn-portafolio">
+                Volver al Currículum
+            </a>
+        </footer>
+
+    </body>
+
+
 </html>
